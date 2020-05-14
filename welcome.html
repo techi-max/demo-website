@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align:center;
+			border-spacing: 5px;
+			/*background-color: rgba(255,255,255, 10%);*/
+		}
+		tr {
+			background-color: rgba(0,0, 0, 10	%);	
+		}
+
+		#myName {
+			font-weight: bold
+		}
+		
+	</style>
+	<script>
+		document.getElementById("demo").innerHTML = 'Hello Javascript'
+		document.getElementById("demo").style.fontSize = "30px"
+	</script>
+	<noscript>Sorry, your browser does not support javascript</noscript>
+
+
+	<link rel="stylesheet" href='css/styles.css'>
+</head>
+
+<body>
+	<h1 style="border:5px solid rgba(15,22, 150, 100%)">My first Website</h1> <!-- inline css -->
+	<div>
+	<p ><span class="blocks">This</span> <sub>is</sub> a <del>paragraph</del> </p>
+	<a href="#myList">Jump to List</a>
+	<a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank">
+		<img style='width: 200px;height: 200px; float:left' id="image" src="images/image1.jpg">William Henry Gates III (born October 28, 1955) is an American business magnate, software developer, investor, and philanthropist. He is best known as the co-founder of Microsoft Corporation.[2][3] During his career at Microsoft, Gates held the positions of chairman, chief executive officer (CEO), president and chief software architect, while also being the largest individual shareholder until May 2014. He is one of the best-known entrepreneurs and pioneers of the microcomputer revolution of the 1970s and 1980s.
+	</a>
+
+	</div>
+
+
+	<table style="width:100%">
+		<caption class="blocks">This is my first table</caption>
+		<tr>
+			<th>Firstname</th>
+			<th colspan="2">Lastname</th>
+		
+		</tr>
+		<tr>
+			<td style='background-color: green'>Dr</td>
+			<td id="myName">Moosa</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>100</td>
+		</tr>
+<!-- -->
+	</table>
+
+
+
+	<ol type="a" class="blocks">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Soda</li>
+		<li>Milk</li>
+	</ol>
+	<div style="text-align: right;">
+		<iframe src="https://en.wikipedia.org/wiki/Bill_Gates"></iframe>
+	</div>
+
+	<p id="demo"></p>
+
+	<button type="button" onclick="document.getElementById('image').src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/220px-Bill_Gates_2018.jpg'">Click me to change image</button>
+
+	<br>
+	<br>
+	<form method="get">
+		First Name: <br>
+		<input type="text" id="fname" name="fname" required><br>
+		<label for="lname">Email:</label><br>
+		<input type="text" id="lname" name="lname" value="moosa@techimax.in" disabled><br>
+		<label for="pin">Pin Code:</label><br>
+		<input type="text" id="pin" name="pin" maxlength="6" >
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+
+		<input list="browsers" name="browser">
+		<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Chrome">
+			<option value="Safari">
+			<option value="Firefox">
+			<option value="Edge">
+			
+		</datalist>
+		<br>
+		<input type="submit" value="press">
+
+	</form>
+
+	
+</body>
+
+</html>
+ 	
